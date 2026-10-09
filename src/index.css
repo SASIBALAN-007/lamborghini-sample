@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+
+@keyframes model-right {
+  from {
+    opacity: 0;
+    transform: translateX(60px) scale(1.03);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes model-left {
+  from {
+    opacity: 0;
+    transform: translateX(-60px) scale(1.03);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-model-right {
+  animation: model-right 700ms ease-out;
+}
+
+.animate-model-left {
+  animation: model-left 700ms ease-out;
+}
+
+.animate-fade-up {
+  animation: fade-up 600ms ease-out;
+}
+
